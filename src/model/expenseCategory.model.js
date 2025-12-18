@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 const expenseCategorySchma = new mongoose.Schema({
   user: {
     type: mongoose.Schema.Types.ObjectId,
-    ref: "userModel",
+    ref: "user",
     reduired: true,
   },
   categoryName: {
